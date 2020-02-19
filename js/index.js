@@ -28,16 +28,27 @@ for (let i = 0; i < driverUpperCase.length; i++) {
     separated += driverUpperCase[i] + " ";
 }
 
-
 console.log(separated);
+
+
+//otra manera de hacerlo:
+
+const concat = (word) => {
+    var result = "";
+    for (var i = 0; i < word.length; i++) {
+        result += (word.charAt(i) + " ");
+    }
+    return result;
+};
+
+
 
 
 //3.2
 let reversed = "";
 
-
-for (let j = navigator.length - 1; j >= 0; j--) {
-    reversed += navigator[j] + "";
+for (let j = hacker2.length - 1; j >= 0; j--) {
+    reversed += hacker2[j] + "";
 }
 
 console.log(reversed);
@@ -50,6 +61,13 @@ if (hacker1 === hacker2) {
 } else {
     console.log("Yo, the navigator goes first definitely");
 }
+
+//Otra manera de hacerlo:
+
+function compare (a, b) {
+    return a.localeCompare(b);
+}
+//Devuelve un número negativo si la a va antes; o un número positivo si la B va antes. Si son iguales devuelve 0
 
 
 //BONUS 1
